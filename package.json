@@ -3,17 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev": "NODE_ENV=development vue-cli-service serve",
+    "build": "NODE_ENV=production vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "webpack-inspect": "vue inspect > webpack-inspect.js"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.1"
   },
   "devDependencies": {
     "@types/chai": "^4.1.0",
@@ -26,8 +29,13 @@
     "chai": "^4.1.2",
     "fibers": "^3.1.1",
     "lint-staged": "^8.1.0",
+    "mockjs": "^1.0.1-beta3",
+    "prettier-stylelint": "^0.4.2",
     "sass": "^1.16.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-ydj": "^0.1.1",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.0.0",
     "vue-template-compiler": "^2.5.21"
   },

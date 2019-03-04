@@ -10,4 +10,10 @@ declare global {
       [elem: string]: any;
     }
   }
+
+  namespace App {
+    interface Person {
+      name1: string;
+    }
+  }
 }
